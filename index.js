@@ -1,4 +1,3 @@
-//import { v4 as uuidv4 } from 'uuid';
 const { v4: uuidv4 } = require('uuid');
 
 const mysql = require('mysql');
@@ -9,7 +8,6 @@ const db = mysql.createPool({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE
-
 })
 
 const NewsAPI = require('newsapi');
@@ -35,13 +33,6 @@ const result = newscategory.map((category) => {
                 console.log(err);
             });
         })
-
-        /*
-          {
-            status: "ok",
-            articles: [...]
-          }
-        */
     });
 });
 // });
@@ -69,30 +60,5 @@ const res = locations.map((location) => {
                 console.log(err);
             });
         })
-        /*
-          {
-            status: "ok",
-            articles: [...]
-          }
-        */
     });
 });
-// To query sources
-// All options are optional
-// newsapi.v2.sources({
-//   category: 'technology',
-//   language: 'en',
-//   country: 'us'
-// }).then(response => {
-//   console.log(response);
-//   /*
-//     {
-//       status: "ok",
-//       sources: [...]
-//     }
-//   */
-// });
-
-// app.listen(3001, () => {
-//     console.log("Running on the port");
-// });
