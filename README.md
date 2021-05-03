@@ -1,4 +1,4 @@
-# coeus_newsportal_nodejs_backend
+# Coeus_newsportal_nodejs_backend
 A nodejs repository with project files to source data from external API https://newsapi.org/ and load into coeusnews MySQL database.
 
 Technology Stack:
