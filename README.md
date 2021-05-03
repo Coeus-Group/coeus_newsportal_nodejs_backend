@@ -18,4 +18,10 @@ Clone or download zip to your machine then hit this :
 
 npm install
 
-Run npm test and upon success run the index.js file. 
+Execute tests using:
+
+- npm test
+
+To upload new articles into Coeusnews Database, run:
+
+-node index.js
